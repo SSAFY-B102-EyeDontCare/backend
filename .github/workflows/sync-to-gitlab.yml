@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Trigger GitLab pipeline
         env:
-          GITLAB_API: https://gitlab.com/api/v4
+          GITLAB_API: https://lab.ssafy.com/api/v4
           GITLAB_PROJECT_ID: ${{ vars.GITLAB_PARENT_PROJECT_ID }}
           GITLAB_TRIGGER_TOKEN: ${{ secrets.GITLAB_PARENT_TRIGGER_TOKEN }}
 
